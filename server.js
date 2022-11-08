@@ -3,7 +3,7 @@ const app = express();
 const http = require('http').Server(app)
 const io = require('socket.io')(http)
 const mongoose = require('mongoose')
-const dburl ="mongodb+srv://mongodb123:mongodb123@cluster0.ioyll.mongodb.net/chat-app?retryWrites=true&w=majority";
+const dburl ="url";
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(express.static(__dirname))
